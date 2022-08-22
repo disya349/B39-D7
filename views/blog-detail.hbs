@@ -1,33 +1,25 @@
 <html>
     <head>
         <title>Blog Detail</title>
-        <link rel="icon" type="image/x-icon" href="assets/images/Logo.png">
-        <link rel="stylesheet" href="assets/styling/blog.css">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="icon" type="image/x-icon" href="/assets/images/Logo.png">
+        <link rel="stylesheet" href="/assets/styling/blog.css">
     </head>
     <body>
-        <nav class="navbar navbar-expand-lg bg-light">
-            <div class="container-fluid">
-                <img src="assets/images/Logo.png" style="width: 60px" class="ms-5 me-5">
-                
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-              
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" href="/">Home</a>
-                        </li>
-                        
-                        <li class="nav-item">
-                            <a class="nav-link" href="/add-project">Add Project</a>
-                        </li>
-                    </ul>
-                
-                    <a class="btn btn-outline-success me-5" href="/contact">Contact Me</a>
-                </div>
+        <nav>
+            <div class="nav-left">
+                <img src="/assets/images/Logo.png" alt="logo">
+                <ul>
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+                    <li>
+                        <a href="/add-project">Add Project</a>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="nav-right">
+                <a href="/contact">Contact Me</a>
             </div>
         </nav>
 
@@ -35,7 +27,7 @@
             <div class="blog-detail-container">
                 <h1>{{title}}</h1>
                 <div class="author">
-                    1 Jan 1970 07:00 WIB | Dicki Syafrudin
+                    {{postAt}} | {{author}}
                 </div>
 
                 <div class="blog-detail-dua">
@@ -47,36 +39,38 @@
                         <div class="blog-detail-right-a">
                             <label>Duration</label>
                             <div>
-                                <img src="assets/images/calendar.png" alt="calender"/>
+                                <img src="/assets/images/calendar.png" alt="calender"/>
                                 <p class="duration-project">12 Jan 2022 - 12 Feb 2022</p>
                             </div>
                             
                             <div>
-                                <img src="assets/images/clock.png" alt="clock"/>
+                                <img src="/assets/images/clock.png" alt="clock"/>
                                 <p class="duration-project">1 month</p>
                             </div>
                         </div>
-                        <label class="mb-3">Technologies</label>
+
+                        <label>Technologies</label>
+                        
                         <div class="blog-detail-right-b">
                             <div class="tech-left">
-                                <div class="mb-3">
-                                    <i class="fa-brands fa-node-js fa-2xl"></i>
-                                    <p>Node Js</p>
+                                <div>
+                                    <img src="/assets/images/html.png" alt="html"/>
+                                    <p>HTML</p>
                                 </div>
                                 <div>
-                                    <i class="fa-brands fa-java fa-2xl"></i>
-                                    <p>Java</p>
+                                    <img src="/assets/images/css.png" alt="css"/>
+                                    <p>CSS</p>
                                 </div>
                             </div>
 
                             <div class="tech-right">
-                                <div class="mb-3">
-                                    <i class="fa-brands fa-react fa-2xl"></i>
-                                    <p>React</p>
+                                <div>
+                                    <img src="/assets/images/javascript.png" alt="javascript"/>
+                                    <p>Javascript</p>
                                 </div>
                                 <div>
-                                    <i class="fa-brands fa-python fa-2xl"></i>
-                                    <p>Python</p>
+                                    <img src="/assets/images/sql.png" alt="sql"/>
+                                    <p>SQL</p>
                                 </div>
                             </div>
                         </div>
