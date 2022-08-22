@@ -12,7 +12,7 @@ app.get('/', function(request, response){
 })
 
 app.get('/contact', function(request, response){
-    response.render('/contact')
+    response.render('contact')
 })
 
 app.get('/blog-detail/:id', function(request, response){    
